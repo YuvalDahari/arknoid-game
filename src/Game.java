@@ -20,7 +20,7 @@ import java.util.List;
  * The main class of the game.
  */
 
-public class Ass6Game {
+public class Game {
     private static final int FIRST_LEVEL = 1;
     private static final int SECOND_LEVEL = 2;
     private static final int THIRD_LEVEL = 3;
