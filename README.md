@@ -1,4 +1,4 @@
-# Arkanoid Clone in Java
+# Arkanoid game
 This project is a basic implementation of the classic Arkanoid game in Java. It features four levels with increasing difficulty, allows pausing and resuming gameplay, and displays a final score screen.
 
 ## Features
