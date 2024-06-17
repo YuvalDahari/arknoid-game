@@ -7,7 +7,7 @@ Pause the game with the "p" key and resume with the spacebar.
 View a final score screen upon completing or losing the game.
 
 ## Running the Game
-1. Download the Code:
+1.Download the Code:
 Make sure you have the source code for the project (ass6.zip) containing all the classes and the build.xml file.
 
 2.Extract the Files:
