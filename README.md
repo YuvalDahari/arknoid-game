@@ -6,36 +6,36 @@ Play through four challenging levels.
 Pause the game with the "p" key and resume with the spacebar.
 View a final score screen upon completing or losing the game.
 ## Running the Game
-# 1. Download the Code:
+## 1. Download the Code:
 Make sure you have the source code for the project (ass6.zip) containing all the classes and the build.xml file.
 
-# 2.Extract the Files:
+## 2.Extract the Files:
 Unzip the downloaded file (ass6.zip) to extract the project files.
 
-# 3.Compile the Code: 
+## 3.Compile the Code: 
 Open a terminal or command prompt and navigate to the extracted folder. Run the following command to compile the code:
 ```shel
 ant compile
 ```
-# 4.Run the Game:  
+## 4.Run the Game:  
 After successful compilation, run the game with the following command:
 ```shel
 ant run
 ```
-# Playing Specific Levels (Optional)
+## Playing Specific Levels (Optional)
 You can choose which levels to play by specifying them as arguments when running the program. For example, to play levels 3 and then 1:
 ```shel
 ant -Dargs="3 1" run
 ```
 Any argument that's not a number between 1 and the total number of levels will be ignored.
 
-# Controls
+## Controls
 - Use the left and right arrow keys to move the paddle.
 - The space bar launches the ball when it's attached to the paddle.
-# End Screen:
+## End Screen:
 The end screen displays your final score and indicates whether you won or lost the game. Press the spacebar to exit the game from the end screen.
 
-# Bonus Points
+## Bonus Points
 Earn bonus points by making the backgrounds of the levels more visually appealing. This is subjectively judged based on aesthetics and doesn't require code changes.
 
 
