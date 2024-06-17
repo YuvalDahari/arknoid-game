@@ -30,14 +30,7 @@ ant -Dargs="3 1" run
 ```
 Any argument that's not a number between 1 and the total number of levels will be ignored.
 
-## Controls
-- Use the left and right arrow keys to move the paddle.
-- The space bar launches the ball when it's attached to the paddle.
-## End Screen:
-The end screen displays your final score and indicates whether you won or lost the game. Press the spacebar to exit the game from the end screen.
 
-## Bonus Points
-Earn bonus points by making the backgrounds of the levels more visually appealing. This is subjectively judged based on aesthetics and doesn't require code changes.
 
 
 # Further Development Ideas
