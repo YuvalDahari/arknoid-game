@@ -1,28 +1,47 @@
 # Arkanoid game
-This project is a basic implementation of the classic Arkanoid game in Java. It features four levels with increasing difficulty, allows pausing and resuming gameplay, and displays a final score screen.
+This project was developed as a 7-part ongoing assignment during the second semester of my first year at Bar-Ilan University (BIU). The project showcases a single-threaded implementation of the Arkanoid game, which is uncommon for games of this nature. Additionally, it does not utilize Java's built-in GUI objects; instead, a custom GUI implementation included in this repository is used.
+The game features multiple levels with increasing difficulty and is built on a user-friendly graphical interface. The development was carried out using Java language in the IntelliJ IDEA Ultimate IDE, adhering to several key Object-Oriented Programming (OOP) principles:
 
 ## Features
 Play through four challenging levels.
 Pause the game with the "p" key and resume with the spacebar.
 View a final score screen upon completing or losing the game.
 
-# My Project
-the different levels:
+## Design Patterns
+
+### Builder Design Pattern
+The Builder design pattern was used in this project to create various game objects in a step-by-step manner. This allows for greater flexibility and ease of use, as each builder class is responsible for constructing a specific object. Builders were used to create balls, blocks, limits, and paddles in a clear and organized manner. This approach allows for more readable and maintainable code and makes it easy to modify the properties of each object during the construction process.
+
+### Strategy Design Pattern
+The strategy design pattern was used in the project to allow different behaviors for block placement and coloring in the first level of the Arkanoid game. The implementation of these strategies allows for more flexibility in creating different levels with different characteristics without having to change the core game code.
+
+### Decorator Design Pattern
+The decorator design pattern was used to add new functionalities to existing Animation objects. The `WaitingForKeyPressDecorator` class is the decorator, while the `PauseScreen` and `KeyPressStoppableAnimation` classes are the concrete components that are decorated. The decorator pattern allows for dynamically adding new functionalities to existing objects without changing their structure, while keeping the code clean and maintainable.
+
+### Observer Design Pattern
+The Observer design pattern was used to handle events triggered by different game objects. The game objects are implemented as Observables, and the listener classes are implemented as Observers. The listener classes subscribe to events triggered by the game objects and act accordingly, such as removing blocks or balls from the game or updating the player's score. The use of the Observer pattern allows for a flexible and modular code structure, where new listeners can easily be added without modifying the game objects themselves.
+
+## Screenshots
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
     <div style="flex: 1; padding: 5px;">
-        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.25.59_7fb47738.jpg?raw=true" alt="level 1" width="300"/>
+        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.25.59_7fb47738.jpg?raw=true" alt="level 1" width="400"/>
     </div>
     <div style="flex: 1; padding: 5px;">
-        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.26.37_f325acb8.jpg?raw=true" alt="level 2" width="300"/>
+        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.26.37_f325acb8.jpg?raw=true" alt="level 2" width="400"/>
     </div>
     <div style="flex: 1; padding: 5px;">
-        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.28.15_07a5d35e.jpg?raw=true" alt="level 3" width="300"/>
+        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.28.15_07a5d35e.jpg?raw=true" alt="level 3" width="400"/>
     </div>
     <div style="flex: 1; padding: 5px;">
-        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.28.59_bdb300d9.jpg?raw=true" alt="level 4" width="300"/>
+        <img src="https://github.com/YuvalDahari/arknoid-game/blob/master/pics/%D7%AA%D7%9E%D7%95%D7%A0%D7%94%20%D7%A9%D7%9C%20WhatsApp%E2%80%8F%202024-06-25%20%D7%91%D7%A9%D7%A2%D7%94%2001.28.59_bdb300d9.jpg?raw=true" alt="level 4" width="400"/>
     </div>
 </div>
 
+## Levels
+- **Level 1**: Introduction to the basic mechanics.
+- **Level 2**: Increased speed and more blocks.
+- **Level 3**: Introduction of moving blocks.
+- **Level 4**: Complex patterns and faster speeds.
 
 
 ## Running the Game
