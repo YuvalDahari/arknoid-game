@@ -1,5 +1,5 @@
 # Arkanoid game
-This project was developed as a 7-part ongoing assignment during the second semester of my first year at Bar-Ilan University (BIU). The project showcases a single-threaded implementation of the Arkanoid game, which is uncommon for games of this nature. Additionally, it does not utilize Java's built-in GUI objects; instead, a custom GUI implementation included in this repository is used.
+This project was developed as a 7-part ongoing assignment during the second semester of my first year at Bar-Ilan University (BIU). 
 The game features multiple levels with increasing difficulty and is built on a user-friendly graphical interface. The development was carried out using Java language in the IntelliJ IDEA Ultimate IDE, adhering to several key Object-Oriented Programming (OOP) principles:
 
 ## Features
